@@ -31,13 +31,13 @@ Voor de opdrachtgever maken wij een website wat eigenlijk een webapp is. Het is 
 
 Op de homepagina heb je een overzicht van alle pagina's die te vinden zijn op de webapp. Daarna heb je een knop die linkt naar de interactieve veldverkenner en je krijgt de laatste 3 nieuwsberichten te zien in een carousel.
 
-Hifi
+Hifi schets
 
-![Hoofdpagina](images/HomepaginaBloemenveld.png)
+![Hoofdpagina](./images/HomepaginaBloemenveld.png)
 
-Breakdown
+Breakdown schets
 
-![Hoofdpagina Breakdown](Images/HomeBreakdown.png)
+![Hoofdpagina Breakdown](./images/HomeBreakdown.png)
 
 ## Veldverkenner
 
