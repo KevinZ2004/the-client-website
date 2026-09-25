@@ -1,1 +1,153 @@
-/* CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1e8;
+    color: #243b2a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: #f4f1e8;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243b2a;
+}
+
+.hero {
+    display: flex;
+    min-height: 550px;
+    padding: 40px 50px 80px;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    max-width: 450px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #3d6947;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.image-placeholder {
+    height: 450px;
+    background: #b7c7a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3d4d3b;
+}
+
+.intro {
+    background: #dce5d2;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.intro p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 30px 50px;
+    background: #243b2a;
+    color: white;
+}
+
+/* Mobiel */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px 60px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .hero-image {
+        order: 2;
+    }
+
+    .image-placeholder {
+        height: 300px;
+    }
+
+    .intro {
+        padding: 60px 20px;
+    }
+
+    .intro h2 {
+        font-size: 35px;
+    }
+
+    footer {
+        padding: 25px 20px;
+    }
+}
