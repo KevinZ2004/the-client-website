@@ -6,11 +6,11 @@ Ontwerp en ontwikkel een webapp met een interactieve veldverkenner waarbij bezoe
 
 **Repository**
 
-- [Kevin](https://kevinz2004.github.io/the-client-website/)
+- [Kevin](https://github.com/KevinZ2004)
 
 **Live website**
 
-https://kevinz2004.github.io/Bloemenveld-Frankendael/
+https://kevinz2004.github.io/the-client-website/
 
 ## Inhoudsopgave
 
