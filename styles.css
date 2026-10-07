@@ -28,6 +28,8 @@ header {
     font-size: 20px;
     font-weight: bold;
     line-height: 1;
+    color: #243b2a;
+    text-decoration: none;
 }
 
 nav {
