@@ -160,7 +160,7 @@ h1 {
         font-weight: bold;
 
         &:hover {
-            color:  #243b2a;
+            color: #243b2a;
         }
     }
 }
@@ -203,10 +203,17 @@ h1 {
     .hero-text,
     .hero-image {
         width: 100%;
+        order: 2;
     }
 
-    .hero-image {
-        order: 2;
+    .hero-text img {
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-bottom: 30px;
     }
 
     .image-placeholder {
