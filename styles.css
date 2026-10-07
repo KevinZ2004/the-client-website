@@ -124,8 +124,6 @@ h1 {
     }
 }
 
-
-
 .main-footer {
     background: #1f1f1f;
     color: white;
@@ -165,7 +163,82 @@ h1 {
     }
 }
 
+.news-section {
+    background: #dce5d2;
+    padding: 80px 50px;
 
+    @media (width > 700px) {
+        padding: 60px 20px;
+    }
+}
+
+.news-section h2 {
+    font-size: 45px;
+    color: #243b2a;
+    margin-bottom: 35px;
+    text-align: center;
+
+    @media (width > 700px) {
+        font-size: 35px;
+    }
+}
+
+.news-slider {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 15px;
+}
+
+.news-card {
+    background: #f4f1e8;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 270px;
+    flex: 1;
+    scroll-snap-align: start;
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-date {
+    font-size: 13px;
+    color: #5d705f;
+}
+
+.news-content h3 {
+    color: #243b2a;
+    font-size: 22px;
+    margin: 8px 0 12px;
+}
+
+.news-content p {
+    color: #3d4d3b;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.news-content a {
+    color: #3d6947;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
 
 .main-footer .icon {
     font-size: 30px;
@@ -183,7 +256,6 @@ h1 {
 
     header {
         height: 75px;
-
         padding: 20px;
     }
 
@@ -226,6 +298,10 @@ h1 {
 
     .intro h2 {
         font-size: 35px;
+    }
+
+    .news-card {
+        min-width: 85%;
     }
 
     .main-footer {
