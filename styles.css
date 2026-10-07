@@ -46,7 +46,7 @@ nav a {
 
 main {
     padding-top: 90px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 .hero {
@@ -238,7 +238,7 @@ h1 {
 }
 
 .collectie {
-    padding: 50px;
+    padding: 140px 50px 50px;
     background: #f4f1e8;
 }
 
@@ -388,7 +388,7 @@ h1 {
     }
 
     .collectie {
-        padding: 30px 20px 60px;
+        padding: 100px 20px 60px;
     }
 
     .collectie-header h1 {
