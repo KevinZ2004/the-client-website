@@ -63,8 +63,8 @@ h1 {
     line-height: 0.95;
     margin-bottom: 25px;
 
-    display: grid;
-    grid-template-columns: min-content;
+    /* display: grid;
+    grid-template-columns: min-content; */
 
     @media (width > 700px) {
         font-size: clamp(3.125rem, -0.8523rem + 9.0909vw, 4.375rem);
@@ -240,6 +240,80 @@ h1 {
     text-decoration: underline;
 }
 
+.collectie {
+    padding: 50px;
+    background: #f4f1e8;
+}
+
+.collectie-header {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.collectie-header h1 {
+    font-size: 50px;
+    color: #243b2a;
+    margin-bottom: 20px;
+}
+
+.collectie-header p {
+    line-height: 1.6;
+    color: #3d4d3b;
+}
+
+.bloemen-lijst {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bloem-item {
+    display: flex;
+    background: #dce5d2;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.bloem-item img {
+    width: 35%;
+    object-fit: cover;
+}
+
+.bloem-info {
+    padding: 30px;
+}
+
+.bloem-type {
+    font-size: 13px;
+    color: #5d705f;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bloem-info h2 {
+    font-size: 32px;
+    color: #243b2a;
+    margin: 8px 0 15px;
+}
+
+.bloem-info p {
+    line-height: 1.6;
+    color: #3d4d3b;
+    margin-bottom: 20px;
+}
+
+.bloem-info a {
+    color: #3d6947;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bloem-info a:hover {
+    text-decoration: underline;
+}
+
 .main-footer .icon {
     font-size: 30px;
     line-height: 1;
@@ -314,5 +388,26 @@ h1 {
 
     .main-footer .icon {
         font-size: 26px;
+    }
+
+    .collectie {
+        padding: 30px 20px 60px;
+    }
+
+    .collectie-header h1 {
+        font-size: 40px;
+    }
+
+    .bloem-item {
+        flex-direction: column;
+    }
+
+    .bloem-item img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .bloem-info {
+        padding: 25px;
     }
 }
