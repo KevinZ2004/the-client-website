@@ -10,6 +10,7 @@ body {
     color: #243b2a;
 }
 
+/* HEADER */
 header {
     position: fixed;
     top: 0;
@@ -44,15 +45,17 @@ nav a {
     font-size: 16px;
 }
 
+/* MAIN */
 main {
     padding-top: 90px;
     padding-bottom: 75px;
 }
 
+/* HERO / HOMEPAGE */
 .hero {
     display: flex;
     min-height: 550px;
-    padding: 40px 50px 80px;
+    padding: 40px 20px 80px;
     gap: 50px;
     align-items: center;
 }
@@ -65,10 +68,10 @@ h1 {
     font-size: 50px;
     line-height: 0.95;
     margin-bottom: 25px;
-    /* display: grid;
-    grid-template-columns: min-content; */
+}
 
-    @media (width > 700px) {
+@media (min-width: 701px) {
+    h1 {
         font-size: clamp(3.125rem, -0.8523rem + 9.0909vw, 4.375rem);
     }
 }
@@ -102,30 +105,32 @@ h1 {
     color: #3d4d3b;
 }
 
+/* INTRODUCTIE */
 .intro {
     background: #dce5d2;
     padding: 80px 50px;
     text-align: center;
-
-    h2 {
-        font-size: 45px;
-        line-height: 1;
-        margin-bottom: 25px;
-    }
-
-    p {
-        max-width: 600px;
-        margin: 0 auto;
-        line-height: 1.6;
-    }
 }
 
+.intro h2 {
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* FOOTER */
 .main-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #1f1f1f;
+    background: #243b2a;
     color: white;
     padding: 10px 20px;
     z-index: 9999;
@@ -138,35 +143,39 @@ h1 {
     list-style: none;
     margin: 0;
     padding: 0;
-
-    li {
-        flex: 1;
-        text-align: center;
-    }
-
-    a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-
-        &:hover {
-            color: #243b2a;
-        }
-    }
 }
 
+.main-footer li {
+    flex: 1;
+    text-align: center;
+}
+
+.main-footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-footer a:hover {
+    color: #5d7cff;
+}
+
+.main-footer .icon {
+    font-size: 30px;
+    line-height: 1;
+    color: #fff;
+    filter: brightness(0) invert(1);
+}
+
+/* NIEUWSSECTIE */
 .news-section {
     background: #dce5d2;
     padding: 80px 50px;
-
-    @media (width > 700px) {
-        padding: 60px 20px;
-    }
 }
 
 .news-section h2 {
@@ -174,10 +183,6 @@ h1 {
     color: #243b2a;
     margin-bottom: 35px;
     text-align: center;
-
-    @media (width > 700px) {
-        font-size: 35px;
-    }
 }
 
 .news-slider {
@@ -192,7 +197,7 @@ h1 {
 
 .news-card {
     background: #f4f1e8;
-    border-radius: 15px;
+    border-radius: 30px;
     overflow: hidden;
     min-width: 270px;
     flex: 1;
@@ -204,6 +209,7 @@ h1 {
     height: 180px;
     object-fit: cover;
     display: block;
+    border-radius: 30px;
 }
 
 .news-content {
@@ -237,6 +243,7 @@ h1 {
     text-decoration: underline;
 }
 
+/* COLLECTIEPAGINA */
 .collectie {
     padding: 140px 50px 50px;
     background: #f4f1e8;
@@ -259,27 +266,38 @@ h1 {
     color: #3d4d3b;
 }
 
+/* COLLECTIEKAARTEN: TWEE KOLOMMEN */
 .bloemen-lijst {
-    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+/* INDIVIDUELE BLOEMKAART */
 .bloem-item {
     display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    margin-bottom: 0;
     background: #dce5d2;
-    margin-bottom: 30px;
     border-radius: 15px;
     overflow: hidden;
-    min-height: 250px;
 }
 
+/* AFBEELDING VAN DE BLOEM */
 .bloem-item img {
-    width: 35%;
+    display: block;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
+/* TEKST IN DE BLOEMKAART */
 .bloem-info {
-    padding: 30px;
+    padding: 25px;
 }
 
 .bloem-type {
@@ -293,12 +311,17 @@ h1 {
     font-size: 32px;
     color: #243b2a;
     margin: 8px 0 15px;
+    overflow-wrap: anywhere;
 }
 
 .bloem-info p {
     line-height: 1.6;
     color: #3d4d3b;
     margin-bottom: 20px;
+}
+
+.bloem-info p:last-child {
+    margin-bottom: 0;
 }
 
 .bloem-info a {
@@ -311,19 +334,9 @@ h1 {
     text-decoration: underline;
 }
 
-.main-footer .icon {
-    font-size: 30px;
-    line-height: 1;
-    color: #FFF;
-    filter: brightness(0) invert(1);
-}
-
-.main-footer a:hover {
-    color: #5d7cff;
-}
-
+/* MOBIELE WEERGAVE */
 @media (max-width: 700px) {
-
+    /* Header */
     header {
         height: 75px;
         padding: 20px;
@@ -333,11 +346,13 @@ h1 {
         display: none;
     }
 
+    /* Pagina-indeling */
     main {
         padding-top: 75px;
         padding-bottom: 90px;
     }
 
+    /* Hero */
     .hero {
         flex-direction: column;
         padding: 30px 20px 60px;
@@ -363,6 +378,7 @@ h1 {
         height: 300px;
     }
 
+    /* Introductie */
     .intro {
         padding: 60px 20px;
     }
@@ -371,10 +387,20 @@ h1 {
         font-size: 35px;
     }
 
+    /* Nieuws */
+    .news-section {
+        padding: 60px 20px;
+    }
+
+    .news-section h2 {
+        font-size: 35px;
+    }
+
     .news-card {
         min-width: 85%;
     }
 
+    /* Footer */
     .main-footer {
         padding: 20px 10px;
     }
@@ -387,24 +413,50 @@ h1 {
         font-size: 26px;
     }
 
+    /* Collectiepagina */
     .collectie {
-        padding: 100px 20px 60px;
+        padding: 100px 12px 60px;
+    }
+
+    .collectie-header {
+        margin: 0 auto 35px;
+        padding: 0 8px;
     }
 
     .collectie-header h1 {
         font-size: 40px;
     }
 
+    /* Ook op mobiel twee collectiekaarten naast elkaar */
+    .bloemen-lijst {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
     .bloem-item {
-        flex-direction: column;
+        border-radius: 12px;
     }
 
     .bloem-item img {
-        width: 100%;
-        height: 220px;
+        height: 140px;
     }
 
     .bloem-info {
-        padding: 25px;
+        padding: 12px;
+    }
+
+    .bloem-info h2 {
+        font-size: 19px;
+        margin: 8px 0 10px;
+    }
+
+    .bloem-info p {
+        font-size: 13px;
+        line-height: 1.45;
+        margin-bottom: 12px;
+    }
+
+    .bloem-type {
+        font-size: 10px;
     }
 }
